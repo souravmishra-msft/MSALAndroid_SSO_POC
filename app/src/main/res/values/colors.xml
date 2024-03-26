@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="customTabToolbar">#009C9C</color>
+    <color name="customTabToolbar_dark">#002D42</color>
+
+    <color name="progressBar_color">#7B00C8</color>
+</resources>

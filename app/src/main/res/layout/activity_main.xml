@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:text="Azure AD Android-MSAL Application"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="This is a sample Android-Kotlin app that implements MSAL-Android v4.7.0 to test the SSO scenarios" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/entra_id_logo" />
+
+        <TextView
+            android:id="@+id/tv_greetings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="20dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/square_button"
+            android:gravity="center"
+            android:text="Login"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/baseline_login_24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_myapps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/square_button"
+                android:gravity="center"
+                android:text="CustomChromeTab"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/chrome_logo"/>
+
+            <Button
+                android:id="@+id/btn_myapps_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/square_button"
+                android:gravity="center"
+                android:text="WebView OIDC App"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/microsoft_logo"/>
+
+            <Button
+                android:id="@+id/btn_saml_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/square_button"
+                android:gravity="center"
+                android:text="WebView SAML App"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/saml_logo"/>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_button"
+                android:gravity="center"
+                android:text="Logout"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/baseline_logout_24"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_logs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:text="" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+{
+  "client_id" : "bd12d64d-2dfb-4541-830b-4be0ec42e6bd",
+  "authorization_user_agent" : "WEBVIEW",
+  "redirect_uri" : "msauth://com.example.msalapp_sso_poc/9fPsX0ZxeQiYnHmhzPajbzSeMe0%3D",
+  "broker_redirect_uri_registered": false,
+  "account_mode": "SINGLE",
+  "authorities" : [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADMyOrg",
+        "tenant_id": "0891528f-b789-41ef-9d10-895a44f5f624"
+      }
+    }
+  ]
+}
